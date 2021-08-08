@@ -66,5 +66,5 @@ btnTime.addEventListener("click", () => {
     }
 
     let video = document.getElementById("video");
-    video.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${searchIn}" title="YouTube video player" enablejsapi=1></iframe>`;
+    video.innerHTML = ``;
 });

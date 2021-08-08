@@ -65,6 +65,10 @@ btnTime.addEventListener("click", () => {
         nowTime = moment().format('HH:mm:ss');
     }
 
+    console.log("Ending!!Go night");
+
     let video = document.getElementById("video");
     video.innerHTML = ``;
+
+    alert("Ending!!Go night");
 });

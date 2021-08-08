@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo {
+    position: absolute;
+    width: 350px;
+    height: 126px;
+    left: 13px;
+    top: 20px;
+}
+
+#gitdiv {
+    cursor: pointer;
+}
+
+#github {
+    position: absolute;
+    width: 53px;
+    height: 54px;
+    right: 231px;
+    top: 57px;
+}
+
+#title h1 {
+    position: absolute;
+    width: 139px;
+    height: 32px;
+    right: 81px;
+    top: 70px;
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+#gith1 {
+    color: #A1A0A0;
+}
+
+#gith1:hover {
+    color: black;
+}
+
+#search {
+    position: absolute;
+    left: calc(50% - 497px/2 - 26.5px);
+    top: calc(50% - 600px/2);
+}
+
+#search input {
+    width: 497px;
+    height: 57px;
+    background: #FFFFFF;
+    border: 6px solid #0066FF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-inline-start: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    outline: none;
+}
+
+#search p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.36);
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#search img {
+    width: 17px;
+    height: 17px;
+    position: absolute; 
+}
+
+#srbtn {
+    position: absolute;
+    width: 60px;
+    height: 57px;
+    top: 0px;
+    left: 480px;
+    background: #0066FF;
+    color: white;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Roboto';
+    cursor: pointer;
+}
+
+#what {
+    cursor: pointer;
+}
+
+#first {
+    position: absolute;
+    width: 325px;
+    height: 93px;
+    right: 0px;
+    top: 312px;
+    background: #0066FF;
+    border-radius: 22px 0px 0px 22px;
+    padding: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+#first img {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 15px;    
+    margin-left: 170px;
+    cursor: pointer;
+}
+
+#first span {
+    cursor: pointer;
+}
+
+#video {
+    width: 560px;
+    height: 315px;
+    position: absolute;
+    left: calc(50% - 560px/2);
+    top: calc(50% - 415px/2 - 0.5px);
+    background-color: #c5c5c5;
+}
+
+#time{
+    position: absolute;
+    width: 400px;
+    height: 41px;
+    left: calc(50% - 400px/2 - 162.5px);
+    bottom: 30%;
+    font-family: 'Roboto';
+    font-size: 25px;
+    line-height: 42px;
+    color: #000000;
+}
+
+#hour {
+    width: 115px;
+    height: 41px;
+    background: #FFFFFF;
+    border: 4px solid #0066FF;
+    box-sizing: border-box;
+    border-radius: 17px;
+    padding-inline-start: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    display: inline;
+    outline: none;
+}
+
+#Min {
+    background: #fff;
+    border: 4px solid #0066FF;
+    box-sizing: border-box;
+    border-radius: 17px;
+    width: 115px;
+    height: 41px;
+    font-size: 20px;
+    padding-inline-start: 10px;
+    margin-left: 20px;
+    display: inline;
+    outline: none;
+}
+
+#btnTime {
+    position: absolute;
+    top: 62px;
+    margin-left: 40px;
+    display: inline;
+    width: 115px;
+    height: 41px;
+    border: 5px solid #0066FF;
+    background-color: white;
+    border-radius: 17px;
+    font-size: 25px;
+    color: #0066FF;
+    cursor: pointer;
+}
+
+#btnTime:hover {
+    background-color: #0066FF;
+    transition: 0.5s;
+    color: white;
+}
+
+#notice {
+    margin-top: 20px;
+}
+
+#notice img {
+    width: 22px;
+    height: 22px;
+}
+
+#notice p {
+    display: inline;
+}

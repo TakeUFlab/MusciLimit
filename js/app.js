@@ -19,7 +19,7 @@ const Notice = () => {
 }
 
 github.addEventListener("click", () => {
-    window.location.assign('./Notice.html');
+    window.location.assign('https://github.com/TakeUFlab/MusciLimit');
 });
 
 const goSearch = () => {
@@ -70,5 +70,5 @@ btnTime.addEventListener("click", () => {
     let video = document.getElementById("video");
     video.innerHTML = ``;
 
-    alert("Ending!!Go night");
+    alert("Ending!!Good night");
 });

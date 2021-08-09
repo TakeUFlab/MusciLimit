@@ -234,13 +234,12 @@
 
 @media (min-height: 760px){
     #time {
-        margin-top: 400px;
+        margin-top: 550px;
     }
 }
 
 @media (min-height: 1000px){
     #time {
-        margin-top: 300px;
+        margin-top: 600px;
     }
 }
-

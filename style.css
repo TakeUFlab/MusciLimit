@@ -27,6 +27,10 @@
     top: 57px;
 }
 
+#title {
+    width: 50px;
+}
+
 #title h1 {
     position: absolute;
     width: 139px;

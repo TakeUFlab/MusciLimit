@@ -42,11 +42,11 @@ let btnTime = document.getElementById("btnTime");
 
 btnTime.addEventListener("click", () => {
     console.log("start");
-    
+    btnTime.innerHTML = `Started`
     const timesup = () => {                            
         let video = document.getElementById("video");  
         video.innerHTML = ``;                          // 這裡先自訂timesup函數的內容
-
+        btnTime.innerHTML = `Start`
         alert(`Ending, Good night`);                   
     }
 

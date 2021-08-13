@@ -43,32 +43,24 @@ let btnTime = document.getElementById("btnTime");
 btnTime.addEventListener("click", () => {
     console.log("start");
     
-    let hour = parseFloat(document.getElementById("hour").value);
-    let min = parseFloat(document.getElementById("Min").value);
+    const timesup = () => {                            
+        let video = document.getElementById("video");  
+        video.innerHTML = ``;                          // 這裡先自訂timesup函數的內容
+
+        alert(`Ending, Good night`);                   
+    }
+
+    let hour = parseFloat(document.getElementById("hour").value); //獲取hour值
+    let min = parseFloat(document.getElementById("Min").value);   //獲取min值
 
     if (isNaN(hour)) {
-        hour = 0;
+        hour = 0;      //假如hour是空值(NaN)就把hour設回0
     }
     if (isNaN(min)) {
-        min = 0;
+        min = 0;       //假如min值是空值(NaN)就把min設為0
     }
 
-    min = min / 60;
-    min.toFixed(1);
-    hour = hour + min;
+    let waitTime = ((hour*60*60)+(min*60))*1000;  //設定要倒數的時間(毫秒)
 
-    const goTime = moment().add(hour, 'hours').format('HH:mm:ss');
-    let nowTime = moment().format('HH:mm:ss');
-
-
-    while (goTime !== nowTime) {
-        nowTime = moment().format('HH:mm:ss');
-    }
-
-    console.log("Ending!!Go night");
-
-    let video = document.getElementById("video");
-    video.innerHTML = ``;
-
-    alert("Ending!!Good night");
-});
+    setTimeout(timesup, waitTime);    //回呼函數 等待waitTime，時間到時執行timesup函數
+});                                   //因為這是回呼函數所以在計時的時候不會阻塞其他函數的功能D

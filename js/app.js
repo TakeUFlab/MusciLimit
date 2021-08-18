@@ -39,7 +39,7 @@ languege.addEventListener('click', () => {
     let btnTime = document.getElementById("btnTime");
     btnTime.addEventListener("click", () => {
         console.log("start");
-        btnTime.innerHTML = `Started`
+        btnTime.innerHTML = `倒數中`
         
         const timesup = () => {                            
             let video = document.getElementById("video");  

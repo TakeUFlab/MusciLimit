@@ -12,6 +12,7 @@ const goSearch = () => {
     let video = document.getElementById("video");
     let searchIn = document.getElementById("searchIn").value;
     searchIn = searchIn.replace('https://www.youtube.com/watch?v=', '');
+    searchIn = searchIn.replace('https://youtu.be/', '');
     video.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${searchIn}" title="YouTube video player" enablejsapi=1></iframe>`;
 }
 

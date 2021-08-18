@@ -9,44 +9,28 @@
 
 #logo {
     width: 300px;
-    margin: 10px;
+}
+
+.languege {
+    color: #c5c5c5;
+    font-size: 10px;
+    font-family: 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 2.5%;
+    right: 9%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.languege:hover {
+    color: #000;
 }
 
 #gitdiv {
-    cursor: pointer;
-}
-
-#github {
     position: absolute;
-    width: 53px;
-    height: 54px;
-    right: 200px;
-    top: 57px;
-}
-
-#title {
-    height: 50px;
-}
-
-#title h1 {
-    position: absolute;
-    width: 139px;
-    height: 32px;
-    right: 40px;
-    top: 70px;
-    font-family: 'Trebuchet MS';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
-}
-
-#gith1 {
-    color: #A1A0A0;
-}
-
-#gith1:hover {
-    color: black;
+    right: 5%;
+    top: 1.5%;
 }
 
 #srAndVideo {
@@ -108,56 +92,26 @@
     cursor: pointer;
 }
 
-#what {
-    cursor: pointer;
-}
-
-#first {
-    position: absolute;
-    width: 325px;
-    height: 93px;
-    right: 0px;
-    top: 312px;
-    background: #0066FF;
-    border-radius: 22px 0px 0px 22px;
-    padding: 20px;
-    color: white;
-    font-size: 25px;
-}
-
-#first img {
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    top: 15px;    
-    margin-left: 170px;
-    cursor: pointer;
-}
-
-#first span {
-    cursor: pointer;
-}
-
 #video {
     width: 560px;
     height: 315px;
     position: absolute;
     left: calc(50% - 560px/2);
-    top: 30%;
+    top: 25%;
     background-color: #c5c5c5;
 }
 
 #time{
     position: absolute;
-    width: 400px;
+    width: 500px;
     height: 41px;
     left: calc(50% - 400px/2 - 162.5px);
     font-family: 'Roboto';
-    font-size: 25px;
+    font-size: 20px;
     line-height: 42px;
     color: #000000;
-    margin-top: 500px;
     margin-left: 20px; 
+    bottom: 230px;
 }
 
 #hour {
@@ -220,26 +174,4 @@
 
 #notice p {
     display: inline;
-}
-
-@media (max-height: 450px){
-    #video {
-        margin-top: 120px;
-    }
-
-    #time {
-        margin-top: 200px;
-    }
-}
-
-@media (min-height: 760px){
-    #time {
-        margin-top: 550px;
-    }
-}
-
-@media (min-height: 1000px){
-    #time {
-        margin-top: 920px;
-    }
 }

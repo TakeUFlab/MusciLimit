@@ -175,3 +175,21 @@
 #notice p {
     display: inline;
 }
+
+@keyframes Breathe {
+    0% {
+        background-color: #0066FF;
+    }
+    25%{
+        background-color: #0034ff;
+    }
+    50%{
+        background-color: #00c6ff;
+    }
+    75% {
+        background-color: #00ffda;
+    }
+    100% {
+        background-color: #0066FF;
+    }
+}

@@ -42,19 +42,8 @@ languege.addEventListener('click', () => {
         btnTime.innerHTML = `倒數中`
         btnTime.style.cssText = 
         `
-            position: absolute;
-            top: 62px;
-            margin-left: 40px;
-            display: inline;
-            width: 115px;
-            height: 41px;
-            border: 5px #0066FF;
-            background-color: white;
-            border-radius: 17px;
-            font-size: 25px;
-            color: #fff;
-            cursor: pointer;
             animation: Breathe 3s 0s infinite ;
+            border: none;
         `
         console.log(btnTime.style.cssText)
         
@@ -62,22 +51,23 @@ languege.addEventListener('click', () => {
             let video = document.getElementById("video");  
             video.innerHTML = ``;                          // 這裡先自訂timesup函數的內容
             btnTime.innerHTML = `開始`
-            alert(`Ending, Good night`);
             btnTime.style.cssText = 
             `
-                position: absolute;
-                top: 62px;
-                margin-left: 40px;
                 display: inline;
                 width: 115px;
                 height: 41px;
                 border: 5px solid #0066FF;
                 background-color: white;
+                box-sizing: border-box;
                 border-radius: 17px;
                 font-size: 25px;
                 color: #0066FF;
                 cursor: pointer;
+                position: relative;
+                top: 2px;
+                margin-left: 20px;
             `                   
+            alert(`Ending, Good night`);
         }
     
         let hour = parseFloat(document.getElementById("hour").value); //獲取hour值
@@ -112,41 +102,31 @@ btnTime.addEventListener("click", () => {
     btnTime.innerHTML = `Started`
     btnTime.style.cssText = 
     `
-        position: absolute;
-        top: 62px;
-        margin-left: 40px;
-        display: inline;
-        width: 115px;
-        height: 41px;
-        border: 5px #0066FF;
-        background-color: white;
-        border-radius: 17px;
-        font-size: 25px;
-        color: #fff;
-        cursor: pointer;
-        animation: Breathe 3s 0s infinite ;
+        animation: Breathe 3s 0s infinite ;        
+        border: none;
     `
 
     const timesup = () => {                            
         let video = document.getElementById("video");  
         video.innerHTML = ``;                          // 這裡先自訂timesup函數的內容
         btnTime.innerHTML = `Start`
-        alert(`Ending, Good night`);
         btnTime.style.cssText = 
         `
-            position: absolute;
-            top: 62px;
-            margin-left: 40px;
             display: inline;
             width: 115px;
             height: 41px;
             border: 5px solid #0066FF;
             background-color: white;
+            box-sizing: border-box;
             border-radius: 17px;
             font-size: 25px;
             color: #0066FF;
             cursor: pointer;
+            position: relative;
+            top: 2px;
+            margin-left: 20px;
         `                                      
+        alert(`Ending, Good night`);
     }
 
     let hour = parseFloat(document.getElementById("hour").value); //獲取hour值

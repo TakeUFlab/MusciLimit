@@ -136,6 +136,9 @@
     font-size: 25px;
     color: #0066FF;
     cursor: pointer;
+    position: relative;
+    top: 2px;
+    margin-left: 20px;
 }
 
 #btnTime:hover {

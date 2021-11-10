@@ -23,32 +23,32 @@ search.addEventListener("keydown", (e) => {
 btnTime.addEventListener("click", () => {
     console.log("start");
     btnTime.innerHTML = `Started`
-    btnTime.style.cssText = 
-    `
+    btnTime.style.cssText =
+        `
         animation: Breathe 3s 0s infinite ;        
         border: none;
     `
 
-    const timesup = () => {                            
-        let video = document.getElementById("video");  
+    const timesup = () => {
+        let video = document.getElementById("video");
         video.innerHTML = ``;
         btnTime.innerHTML = `Start`
-        btnTime.style.cssText = 
+        btnTime.style.cssText =
+            `
+        display: inline;
+        width: 100px;
+        height: 41px;
+        border: 3px solid #0066FF;
+        background-color: white;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-size: 25px;
+        color: #0066FF;
+        cursor: pointer;
+        position: relative;
+        top: 2px;
+        transition: 0.3s ease-in-out;
         `
-            display: inline;
-            width: 115px;
-            height: 41px;
-            border: 5px solid #0066FF;
-            background-color: white;
-            box-sizing: border-box;
-            border-radius: 17px;
-            font-size: 25px;
-            color: #0066FF;
-            cursor: pointer;
-            position: relative;
-            top: 2px;
-            margin-left: 20px;
-        `                                      
         alert(`Ending, Good night`);
     }
 
@@ -56,13 +56,13 @@ btnTime.addEventListener("click", () => {
     let min = parseFloat(document.getElementById("Min").value);
 
     if (isNaN(hour)) {
-        hour = 0;     
+        hour = 0;
     }
     if (isNaN(min)) {
-        min = 0;       
+        min = 0;
     }
 
-    let waitTime = ((hour*60*60)+(min*60))*1000;
+    let waitTime = ((hour * 60 * 60) + (min * 60)) * 1000;
 
     setTimeout(timesup, waitTime);
 });

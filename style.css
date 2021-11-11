@@ -36,12 +36,15 @@ body {
     align-items: center;
     flex-direction: column;
     margin-top: 50px;
+    width: 100vw;
+    height: calc(100vw - 68px);
 }
 
 .search {
     display: flex;
     flex-direction: row;
-    width: 500px;
+    width: 100%;
+    justify-content: center;
 }
 
 .search input {
@@ -58,6 +61,7 @@ body {
     font-size: 1.3em;
     line-height: 28px;
     outline: none;
+    margin-left: 10px;
 }
 
 .search>button {
@@ -161,6 +165,10 @@ iframe {
 
     .search input {
         width: 300px;
+    }
+
+    .search>button {
+        font-size: 1.4em;
     }
 }
 

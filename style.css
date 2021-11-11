@@ -37,7 +37,7 @@ body {
     flex-direction: column;
     margin-top: 50px;
     width: 100vw;
-    height: calc(100vw - 68px);
+    height: calc(100vh - 118px);
 }
 
 .search {
@@ -90,6 +90,8 @@ iframe {
     width: 560px;
     height: 315px;
     background-color: #c5c5c5;
+    border: none;
+    outline: none;
 }
 
 .time {
